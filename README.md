@@ -1,28 +1,34 @@
-# TestApp
+# Тестовое задание
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+### Оглавление
+1. Описание задания
+2. Установка
+3. Принцип работы
 
-## Development server
+### Описание задания
+Тестовое задание на вакансию [HeadHunter]
+Условия тестового задания [Google Docs]
+Здесь будет краткое описание, бла-бла-бла
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Установка
 
-## Code scaffolding
+Загрузите этот репозиторий с помощью git clone
+```
+$ git clone ...
+```
+Затем установите необходимые зависимости
+```
+$ npm install
+```
+Перейдите в папку с проектом и запустите приложение
+```
+$ cd testApp
+$ ng serve
+```
+После успешной сборки приложение будет доступно по адресу http://localhost:4200/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+### Принцип работы
+Описание принципа работы
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[HeadHunter]: <https://hh.ru/vacancy/20022248>
+[Google Docs]: <https://docs.google.com/document/d/1wCj5J9NYCyRprZM9hQrv0zNjLtQzHX8aaPg0Qb_qj_U/edit>
