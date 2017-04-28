@@ -33,6 +33,7 @@ export class CreateComponentService {
    * @return {string} Шаблон в виде строки.
   */
   generateTemplateFromJson(obj: IDomNode) {
+    let template = '';
 
     //Создание корневого элемента
     const el = document.createElement(obj.tag);
@@ -42,19 +43,30 @@ export class CreateComponentService {
       el.setAttribute(attr, obj.attributes[attr]);
     }
 
+    //Если в корневом объекте есть атрибут text, то
+    //создается текстовый узел, добавляется в DOM,
+    //записывается его шаблон, и узел удаляется из DOM
+    if (obj.text) {
+      let text;
+      text = document.createTextNode(obj.text);
+      document.body.appendChild(text);
+      template += text.textContent;
+      text.remove();
+    }
+
     //Обработка контента
     processContent(el, obj.content);
 
-    //Добавление корневого элемента в DOM
+    //Добавление корневого элемента  в DOM
     document.body.appendChild(el);
 
     // Запись полученного шаблона в переменную,
     // удаление элементов из DOM и возврат строки с шаблоном
-    const template = el.outerHTML;
+    template += el.outerHTML;
     el.remove();
     return template;
 
-    // Рекурсивная обработка контента элементов
+    // Вспомогательная функция с рекурсивной обработкой контента элементов
     function processContent(parent, content) {
       for (let child of content) {
         if(child.tag) {
