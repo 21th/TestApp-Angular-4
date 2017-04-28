@@ -40,5 +40,5 @@ $ ng serve
 
 Остальные подробности можно узнать из исходного кода, старался комментировать
 
-[HeadHunter]: <https://hh.ru/vacancy/20022248>
+[HeadHunter]: <https://yaroslavl.hh.ru/vacancy/20378939>
 [Google Docs]: <https://docs.google.com/document/d/1wCj5J9NYCyRprZM9hQrv0zNjLtQzHX8aaPg0Qb_qj_U/edit>
